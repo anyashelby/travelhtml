@@ -719,12 +719,19 @@ body {
 	.header__img::after {
 		right: -300px;
 	}
+
+	.destinations__row {
+		flex-direction: column; 
+	}
+
+
 }
 
 @media (max-width: 850px) {
 	
 	.header {
 		padding-top: 20px;
+		min-height: unset;
 	}
 
 	.header__top {
@@ -737,6 +744,8 @@ body {
 	
 	.header__img img {
 		position: static;
+		width: 80%;
+		height: auto;
 	}
 
 	.header__img:after {
@@ -768,4 +777,23 @@ body {
 		border-radius: 20px;
 	}
 
+	
+}
+
+@media (max-width: 460px) {
+	.nav--mobile .nav__toggle {
+		top: 20px;
+		right: 15px;
+	}
+	
+	.nav--mobile .nav__list, 
+	.nav--mobile .nav__login {
+
+		row-gap: 20px;
+
+
+	}
+
+	.header__img:after {
+		display: none;
 }
