@@ -753,6 +753,11 @@ body {
 		height: 304px;
 	}
 
+	.customers__img img {
+		border-radius: 40px;
+		
+	}
+
 }
 
 @media (max-width: 850px) {
@@ -862,8 +867,12 @@ body {
 	}
 
 	.customers__row {
-		flex-direction: column-reverse;
-		row-gap: 30px;
+		column-gap: 30px;
+	}
+
+	.customers__img.customers__img img {
+		max-width: 250px;
+    	border-radius: 25px;
 	}
 
 	.customers__title {
@@ -960,6 +969,16 @@ body {
 
 	.nav__login--footer {
 		display: none; 
+	}
+}
+
+@media (max-width: 640px) {
+	.customers__row {
+		flex-direction: column-reverse;
+	}
+
+	.customers__img.customers__img img {
+		margin-top: 10px;
 	}
 }
 
